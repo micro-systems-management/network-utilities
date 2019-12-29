@@ -1,4 +1,4 @@
-#    Copyright (c) Micro Systems Management 2018, 2019. All rights reserved.
+#    Copyright (c) Micro Systems Management 2019. All rights reserved.
 #    
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
