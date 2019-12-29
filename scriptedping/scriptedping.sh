@@ -1,4 +1,4 @@
-#!/bin/bash
+
 export a=''
 export b=''
 export datetime=$(date +%Y%m%d_%H%M%S)
