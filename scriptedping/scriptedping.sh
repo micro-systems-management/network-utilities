@@ -15,7 +15,6 @@
 #    GNU General Public License is available in the LICENSE file
 #    located in the root of this repository. If not, see
 #    <https://www.gnu.org/licenses/>.
-#
 export a=''
 export b=''
 export datetime=$(date +%Y%m%d_%H%M%S)
