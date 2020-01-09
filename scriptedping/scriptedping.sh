@@ -1,3 +1,4 @@
+#!/bin/bash
 #    Copyright (c) Micro Systems Management 2019. All rights reserved.
 #    
 #    This program is free software: you can redistribute it and/or modify
@@ -15,7 +16,6 @@
 #    located in the root of this repository. If not, see
 #    <https://www.gnu.org/licenses/>.
 #
-#!/bin/bash
 export a=''
 export b=''
 export datetime=$(date +%Y%m%d_%H%M%S)
