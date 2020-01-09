@@ -35,8 +35,9 @@ screen -XS test2 quit
 test1=$(awk -F'time=|ms' '{if($2>200)print$0}' <~/bin/scriptedping/$datetime/tmp/box_Network-ping-$a-$datetime.log.tmp)
 test2=$(awk -F'time=|ms' '{if($2>200)print$0}' <~/bin/scriptedping/$datetime/tmp/box_Network-ping-$b-$datetime.log.tmp)
 if [[ "$test1" ]] || [[ "$test2" ]] ; then
+	mkdir ~/bin/scriptedping/archive/$datetime -p
 	mv ~/bin/scriptedping/$datetime/tmp/box_Network-ping-$a-$datetime.log.tmp ~/bin/scriptedping/archive/$datetime/box_Network-ping-$a-$datetime.log
-	mv ~/bin/scriptedping/$datetime/tmp/box_Network-ping-$b-$datetime.log.tmp ~/bin/scriptedping/archive/$datetime//box_Network-ping-$b-$datetime.log
+	mv ~/bin/scriptedping/$datetime/tmp/box_Network-ping-$b-$datetime.log.tmp ~/bin/scriptedping/archive/$datetime/box_Network-ping-$b-$datetime.log
 	traceroute $a > ~/bin/scriptedping/archive/$datetime/traceroute-$a-$(date +%Y%m%d_%H%M%S).log
 	traceroute $b > ~/bin/scriptedping/archive/$datetime/traceroute-$b-$(date +%Y%m%d_%H%M%S).log
 fi
